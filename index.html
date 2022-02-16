@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/source/Tilda_Icons_3st_count.svg" type="image/x-icon">
+</head>
+<body">
+        <script src="main.js"></script>
+        <div class="wrapper">
+            <div class="header"><header>Міні-калькулятор</header> </div>
+                <div class="imgClass">
+                        <img src="/source/Tilda_Icons_3st_count.svg" class="image" alt="">
+                </div>
+            <div class="content1"> 
+    <input type="text" class="input" name="text1" id="text1" placeholder="Введіть перше число";">
+            </div>
+            <div class="dropdown"> 
+                <button class="buttonOperation" onclick="maksFunction1()">Операція</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <button id="mnoz" onclick="operation='1'">Множення *</button>
+                        <button id="dil" onclick="operation='2'" >Ділення /</button>
+                        <button id="dod" onclick="operation='3'">Додавання +</button>
+                        <button id="vid" onclick="operation='4'" >Віднімання -</button>
+                    </div>
+            </div>
+            <div class="content2">
+    <input type="text" class="input" name="text2" id="text2" placeholder="Введіть друге число";">
+            </div>
+            <div class="buttonBlock">
+        <button class="buttonCount" type="button" onclick="maksFunction2()">Обчислити</button> 
+            </div>
+            <div class="resultBlock"> 
+        <input type="text" class="textResult" id="result" placeholder=" Результат" readonly>
+            </div>
+            </div>
+        <footer class="footer">© Maks Stebelskiy </footer>
+            </div>
+</body>
+</html>
