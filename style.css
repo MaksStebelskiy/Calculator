@@ -1,0 +1,153 @@
+/*---------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+/*---------------------------------------------------*/
+body {
+    height: 100%;
+    background-color: palegoldenrod;
+}
+/*---------------------------------------------------*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+}
+/*---------------------------------------------------*/
+.header {                                                       /*Хедер*/
+    display: flex;
+    align-items:center;
+    justify-content: center;    
+    height: 50px;
+    font-size: 20px;
+    background: LightCoral;
+}
+/*---------------------------------------------------*/
+.imgClass {                                                    /*Лого*/
+    padding: 10px;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;   
+}
+.image {
+    
+    height: 250px;
+   
+}
+/*---------------------------------------------------*/
+.input {                                                     /*Текстові поля*/
+    width: 220px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+}
+/*---------------------------------------------------*/
+.content1 {    
+                                                             /*Перше текстове поле БЛОК*/ 
+    display:flex;
+    margin-top: 20px;
+    align-items:center;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 10px;
+   
+}
+/*---------------------------------------------------*/
+.dropdown {                                                 /*Кнопка ОПЕРАЦІЯ БЛОК*/
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+    
+  }
+.buttonOperation {                                           /*КНОПКА ОПЕРАЦІЯ*/
+    background-color: LightCoral;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 50px; 
+  }
+  
+  /*---------------------------------------------------*/
+.content2 {                                                
+    display:flex;
+    align-items:center;
+    justify-content: center;                                 /*Друге текстове поле БЛОК*/
+    flex: 0 0 auto;
+    padding: 10px;
+    /*background: pink;*/
+}
+/*---------------------------------------------------*/
+.buttonBlock {                                              /*Кнопка ОБЧИСЛИТИ БЛОК*/
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    /*background: greenyellow;*/
+}
+.buttonCount {                                               /*Кнопка ОБЧИСЛИТИ*/
+    background: LightCoral;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 50px; 
+}
+/*---------------------------------------------------*/
+.resultBlock {                                                       /*БЛОК поля РЕЗУЛЬТАТУ*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 0 0 auto;
+    position: relative;
+    /*background: magenta;*/
+}
+.textResult {                                                       /*Поле результату*/
+    width: 220px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+}
+/*---------------------------------------------------*/
+.footer {                                                           /*Футер*/
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 50px;
+    font-size: 20px;/*розмір шрифту футера*/
+    background: LightCoral;/*задній фон футера*/
+}
+/*---------------------------------------------------*/
+  .dropdown-content {                                           /*Випадаючий список*/
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /*---------------------------------------------------*/
+  .dropdown-content button {                                    /*Кнопки з випадаючого*/                               
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    color: black;                                                   
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /*---------------------------------------------------*/
+  .dropdown button:hover {background-color: LightCoral;}                      
+  /*---------------------------------------------------*/
+  .show {display: block;}
